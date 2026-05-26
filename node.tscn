@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bsockbxqjtp32"]
+
+[ext_resource type="Script" uid="uid://bq0qs2ig6n0xu" path="res://audio_pops.gd" id="1_sy5k4"]
+[ext_resource type="AudioStream" uid="uid://blrd2yirnpf60" path="res://audio/jingles-saxophone_00.ogg" id="2_j2q8x"]
+
+[node name="Node" type="AudioStreamPlayer" unique_id=2012184264]
+script = ExtResource("1_sy5k4")
+_stream = ExtResource("2_j2q8x")
