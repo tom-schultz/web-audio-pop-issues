@@ -3,6 +3,22 @@
 [ext_resource type="Script" uid="uid://bq0qs2ig6n0xu" path="res://audio_pops.gd" id="1_sy5k4"]
 [ext_resource type="AudioStream" uid="uid://blrd2yirnpf60" path="res://audio/jingles-saxophone_00.ogg" id="2_j2q8x"]
 
-[node name="Node" type="AudioStreamPlayer" unique_id=2012184264]
+[node name="Control" type="Control" unique_id=1469767169]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Node" type="AudioStreamPlayer" parent="." unique_id=2012184264]
 script = ExtResource("1_sy5k4")
 _stream = ExtResource("2_j2q8x")
+
+[node name="Label" type="Label" parent="." unique_id=2049228002]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "How to use:
+
+Hold Control - one AudioStreamPlayer plays the sound effect on repeat using the finished signal
+
+Press Space - spawn a new AudioStreamPlayer and have it play the SFX. You can spam this."
